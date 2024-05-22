@@ -1,2 +1,22 @@
-# Techno
-Este projeto é uma página web de música techno e festas, criada para treinamento em HTML, CSS e JS. Apenas o link "About" está funcional; os demais estão em desenvolvimento. Veja o projeto responsivo no Netlify: Techno Music Project.
+### Techno Music Project
+Este projeto é uma página web dedicada à música techno e festas, criada para treinamento e aprendizado de desenvolvimento web utilizando HTML, CSS e JavaScript. O design moderno e responsivo garante uma boa experiência em dispositivos móveis e desktops.
+
+### Funcionalidades
+About: A seção "About" está funcional e fornece informações sobre o site.
+Links em Desenvolvimento: Outros links e seções ainda estão em construção.
+Tecnologias Utilizadas
+HTML: Estrutura da página.
+CSS: Estilização e design.
+JavaScript: Funcionalidades interativas, como o efeito 3D na imagem.
+Visualização
+O projeto pode ser visualizado online através do link: Techno Music Project.
+
+### Status do Projeto
+Atualmente, o projeto está em desenvolvimento. Apenas o link "About" está funcionando. Este projeto visa proporcionar uma base sólida para futuras implementações e melhorias.
+
+###Como Contribuir
+Faça um fork deste repositório.
+Crie uma branch para a sua feature (git checkout -b feature/nome-da-feature).
+Commit suas alterações (git commit -m 'Adiciona nova feature').
+Push para a branch (git push origin feature/nome-da-feature).
+Abra um Pull Request.
