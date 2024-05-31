@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Major Mono Display", monospace;
+    color: #ffffff;
+    background-color: #050505;
+}
+
+/*  ---------------  MENU PRINCIPAL  --------------- */
+header {
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 1;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 9999999;
+}
+
+#menu-button {
+    display: none;
+}
+
+.animation {
+    color: #ffffff;
+}
+
+.animation:hover {
+    color: #8c62cf;
+}
+
+.animation {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2114db;
+    box-shadow: 0px 0px 10px rgb(91, 7, 201), inset 0px 0px 10px rgb(91, 7, 201);
+
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*  --------------- ESTILIZACAO DA LOGO  --------------- */
+
+#logo {
+    width: 200px;
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.links-menu {
+    width: 40%;
+    padding: 20px;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+
+    a {
+        color: #FFFFFF;
+        font-size: 17px;
+    }
+}
+
+/*  ---------------  ESTILIZACAO PESQUISA CARRINHO E CONTA ---------------  */
+
+.rigth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+
+    a {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*   ---------------  STYLE INPUT   --------------- */
+input[type="text"] {
+    width: 25vh;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 1px solid #6400a7;
+    padding: 5px;
+    padding-left: 5px;
+    margin-right: 3px;
+    border-radius: 10px 3px 3px 10px;
+}
+
+input[type="submit"] {
+    width: 10vh;
+    background-color: transparent;
+    color: #FFFFFF;
+    outline: none;
+    border: 1px solid #6400a7;
+    padding: 5px;
+    padding-left: 5px;
+    margin-right: 3px;
+    border-radius: 3px 10px 10px 3px;
+    background: linear-gradient(70deg, rgba(27, 27, 27, 0), #aa41ff);
+
+}
+
+input[type="submit"]:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+}
+
+/*  ---------------  todos os items abaixo do header  ---------------  */
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/*  ---------------  SECTIONS DE CONTEUDOS  ---------------  */
+
+.container-pai {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*  ---------------  CONTEUDO INICIAL  ---------------  */
+.section:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('./img/dj.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#container-principal {
+    backdrop-filter: 39px;
+}
+
+.letreiro {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 210%;
+    font-weight: bold;
+    border: 2px solid rgb(91, 20, 161);
+    box-shadow:
+        0 0 20px rgba(140, 50, 255, 0.8),
+        inset 0 0 20px rgba(140, 50, 255, 0.8);
+    color: rgb(241, 241, 241);
+
+}
+
+.letreiro h1 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.letreiro p {
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 720px;
+}
+
+/* --------------- STYLE FOTO PARALLAX PIZZA  ---------------  */
+
+.container {
+    position: relative;
+
+}
+
+.section:nth-of-type(2) {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(25deg, black, blue);
+    background: url('./img/fundoFesta.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgb(91, 20, 161);
+    box-shadow:
+        0 0 20px rgba(140, 50, 255, 0.8),
+        inset 0 0 20px rgba(140, 50, 255, 0.8);
+}
+
+.container_2 {
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.letreiro-2 {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.letreiro-2 h2 {
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.letreiro-2 p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 620px;
+}
+
+.estatua {
+    min-width: 50%;
+    min-height: 100%;
+    perspective: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estatua img {
+    width: 600px;
+    transition: transform 0.1s;  
+}
+
+@media (max-width: 900px) {
+    #menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        width: 3.5vh;
+        color: white;
+        background: transparent;
+        border-radius: 5px;
+        border: none;
+    }
+    header {
+        overflow: visible;
+    }
+
+    .links-menu {
+        box-shadow: 0px 0px 10px#ccc;
+        width: 230px;
+        height: 220px;
+        z-index: 9999;
+        position: absolute;
+        top: 80%;
+        right: 0;
+        overflow:visible;
+        margin: 0;
+        padding-block: 0px;
+        padding: 27px 0 0 0;
+        background-color: #c4c4c47a;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.582);
+    }
+    
+    .menu-hamburguer-elements{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & a {
+            padding: 0.5rem;
+            margin-bottom: 10px;
+            width: 150px;
+            backdrop-filter: blur(9px);
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    }
+
+    #logo {
+        width: 180px;
+    }
+
+    input {
+        display: none;
+    }
+
+    .letreiro-2 {
+        width: 100%;
+    }
+    .estatua{
+        display: none;
+    }
+}
+
+/* paragrafos em vermelhos */
+.texto-color {
+    color: rgba(248, 0, 0, 0.904);
+}
+
+/* Para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px;
+    /* Largura da barra de rolagem */
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Cor de fundo da área da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Cor da barra de rolagem */
+    border-radius: 30px;
+    /* Borda arredondada da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Cor da barra de rolagem ao passar o mouse */
+}
+
+/* Para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar-button {
+
+    background-color: #ccc;
+    /* Cor das setas da barra de rolagem */
+}
+
+::-webkit-scrollbar-button:end {
+    background-color: #ccc;
+}
+
+/* Para navegadores Firefox */
+html {
+    scrollbar-color: #888;
+    /* Cor da barra de rolagem, cor de fundo da área da barra de rolagem e cor das setas */
+}
