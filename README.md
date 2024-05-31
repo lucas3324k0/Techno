@@ -2,6 +2,10 @@
 
 Este projeto é uma página web dedicada à música techno e festas, criada para treinamento e aprendizado de desenvolvimento web utilizando HTML, CSS e JavaScript. O design moderno e responsivo garante uma boa experiência em dispositivos móveis e desktops.
 
+## Visualização
+
+O projeto pode ser visualizado online através do link: [Techno.com](https://techno-music.netlify.app/).
+
 ## Funcionalidades
 
 - **About**: A seção "About" está funcional e fornece informações sobre o site.
